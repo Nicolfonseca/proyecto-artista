@@ -1,0 +1,257 @@
+body {
+  background-color: black;
+  margin: 60px 200px 0px 200px;
+  font-family: "Roboto", sans-serif;
+  color: ivory;
+}
+
+.logo {
+  margin: 0 auto;
+}
+.logoimagen {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+.barradenavegacion {
+  list-style: none;
+  /* quita las viñetas */
+  margin: 0;
+  padding: 0;
+}
+.navegacion {
+  display: inline-block;
+  /* pone mi barra de navegacion en horizontal */
+  padding: 10px 60px 10px 60px;
+}
+/* centrar menu de navegacion */
+nav {
+  background-color: black;
+  padding: 20px 0px;
+  text-align: center;
+}
+/* al pasar el mause sobre el menu me sale otro color */
+.navegacion:hover {
+  background-color: lightpink;
+}
+/* colocamos .navegacion a para darle caracteristicas al menu de navegacion por que es hipervinculo */
+.navegacion a {
+  /* quitamos el color marado de la letra */
+  color: whitesmoke;
+  /* quitamos la linea de abajo del navegador */
+  text-decoration: none;
+  font-weight: 800;
+}
+/* secciones parallax */
+/* un selector simple  de id clases*/
+.parallax {
+  /* imagen de fondo para la pagina o un contenedor */
+  /* los dos puntos nos permite viajer entre carpetas, ubicacion general */
+  background-image: url(../imagenes/fondoparallax.jpg);
+  /* espeficifa el tamaño de la de fondo */
+  /* contain se ajusta al contenedor */
+  background-size: contain;
+  /*respeta la altura minima del elemento  */
+  min-height: 1000px;
+  /* lo que hace es que la imagen no se repita */
+  background-repeat: no-repeat;
+  /* posicion de la imagen */
+  background-position: center;
+  /* fija no se mueve  */
+  background-attachment: fixed;
+  /* display flex ayuda a que la pagina web se adapte a cualquier dispositivo */
+  display: flex;
+  /* centra los items de mi pagina de manera vertical */
+  align-items: center;
+  /* justify es una propieda de flexbox a linea los items de manera horizontal */
+  justify-content: center;
+}
+/* el selector decendiente coincide con todos los elementosque
+  son decendentes de un elemento en especifico  */
+div .tituloparallax h2 {
+  /* selector descendentes (espacios en los medios) tambien podemos usar div o .
+ para hacerle cambios al titulo paralax*/
+  /* cm son edidas obsolutas que no depende de nadien y nunca cambia sus valores */
+  font-size: 2cm;
+  font-weight: 700;
+  /* para centrar los elementos */
+  /* margin: 0 auto; */
+  text-align: center;
+  margin: 0;
+}
+span.parrafoparallax {
+  display: flex;
+  justify-content: center;
+  /* centra el botton */
+  border: 2px solid whitesmoke;
+  /* borde width 2px
+     border style: solid
+     border whitesmoke */
+}
+span.parrafoparallax:hover {
+  /* selector seudoclase */
+  background-color: palevioletred;
+  opacity: 0.7;
+  /* transparencia de un elemento por ejemplo el boton de blackpink */
+}
+span.parrafoparallax a {
+  color: black;
+  font-weight: 400;
+  /* grosor letra */
+  padding: 10px 30px;
+  margin: 0;
+  /* va sin unidades para dar grosor */
+  text-decoration: none;
+  /* quita la linea de los hipervinculos */
+  font-size: 25px;
+  /* tamano de letra */
+}
+/* section 3 */
+div.information {
+  /* pone un elemento al lado del otro */
+  display: inline-flex;
+}
+div.information p {
+  /* color de letra */
+  color: white;
+  /* maximo de ancho de un elemento y impide que el valor de width sea mas largo 
+    que el valor especificado en max-width */
+  max-width: 50%;
+  margin: 0;
+  /* propieda flexible, su funcion es alinerar al centro de un elemento dentro del contenedor */
+  align-self: center;
+  padding-left: 50px;
+  /* establece la altura entre lineas de parrafo */
+  line-height: 23px;
+}
+span.tituloblackpink {
+  display: inline-flex;
+  /* tamaño de titulo */
+  font-size: 40px;
+  /* grosor de letra negrilla */
+  font-weight: 700;
+  margin-top: 20px;
+}
+span.tituloblackpink2 {
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* propiedesades de la imagen */
+div.information img {
+  max-width: 50%;
+  /* maximo tamaño */
+  height: auto;
+  /* altura automatica  calculando una altura especifica*/
+  padding: 0px 1px;
+}
+section.contentmusic {
+  /* espaciado entre letras */
+  letter-spacing: 5px;
+  /* espacio entre las lineas del texto */
+  line-height: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.contentmusic h2 {
+  color: #ffffff;
+  /* negrillla */
+  font-weight: 900;
+  text-align: center;
+  /* espaciado de arriba y abajo y lados */
+  margin: 150px 0px;
+  /* tamaño de letra */
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+div.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  /* solo funciona display flex o  */
+  justify-content: center;
+  /* alinea os elementos en el centro */
+  margin: auto;
+}
+
+div.container div .card {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  /*overflow: hidden;
+  cuandosedesvordaelcontenidoeloverflowhiddenenquititalaimagenseusaconimagenesgrandes*/transition: all 0.2s ;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+div.container .card:hover{
+  transform:translateY(-15px);
+  -webkit-transform:translateY(-15px);
+  -moz-transform:translateY(-15px);
+  -ms-transform:translateY(-15px);
+  -o-transform:translateY(-15px);
+}
+ 
+/* se puede usar solo div.card no importa  */
+div.container .card img {
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  /*compativilidad de navegadores del a bordes a nuestra imagen*/
+  /* primer volor izq, segundo valor derec superior, tercer valor izq ultimo valor derec inferiores*/
+  border-radius: 8px 8px 0px 0px;
+  -webkit-border-radius: 8px 8px 0px 0px;
+  -moz-border-radius: 8px 8px 0px 0px;
+  -ms-border-radius: 8px 8px 0px 0px;
+  -o-border-radius: 8px 8px 0px 0px;
+}
+
+div.container.card h4 {
+  font-weight: 600;
+  color: ivory;
+  
+}
+
+div.container .card p {
+  font-size: 16px;
+  font-weight: 300;
+  color: thistle;
+  
+}
+
+img {
+display: block;
+margin: 0 auto;
+height: 200px;
+width: 300px ;
+}
+
+
+
+div.containervideos div.inframe{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+div.video{
+  padding: 50px 40px 50px 40px;
+  ;
+}
+
+
+  
+
+
+ div.footer img{
+  width: 100px;
+  height: 50px;
+  float: left;
+  margin: 0 auto;
+} 
+
+
+  
